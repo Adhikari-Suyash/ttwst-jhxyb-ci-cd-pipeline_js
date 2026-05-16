@@ -12,7 +12,7 @@ jobs:
     container: node:20-alpine
     steps:
       - name: Checkout
-        users: action/checkout@v3
+        uses: action/checkout@v3
       - name: Install dependencies
         run: |
           npm ci
